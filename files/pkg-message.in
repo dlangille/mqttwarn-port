@@ -1,0 +1,12 @@
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+After installing mqttwarn for the first time, you will want to add the following to
+the end of %%PREFIX%%/etc/supervisord.conf
+
+[program:mqttwarn]
+command = %%PREFIX%%/sbin/mqttwarn
+user = mqttwarn
+environment=MQTTWARNINI="%%PREFIX%%/etc/mqttwarn/mqttwarn.ini",MQTTWARNLOG="/var/log/mqttwarn/mqttwarn.log"
+
+* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 

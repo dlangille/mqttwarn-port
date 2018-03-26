@@ -1,0 +1,10 @@
+--- mqttwarn.ini.sample.orig	2018-03-26 15:29:52.722456000 +0000
++++ mqttwarn.ini.sample	2018-03-26 15:30:54.764462000 +0000
+@@ -14,6 +14,7 @@
+ lwt          = 'clients/mqttwarn'
+ skipretained = False
+ cleansession = False
++libdir       = MQTTWARN_LIBDIR
+ 
+ # MQTTv31 = 3   (default)
+ # MQTTv311 = 4
